@@ -2,7 +2,7 @@
 % Please edit documentation in R/brute.R
 \name{brute_force_knapsack}
 \alias{brute_force_knapsack}
-\title{Tests Knapsack using four different methods}
+\title{Tests Knapsack using Brute Force Search method}
 \usage{
 brute_force_knapsack(x, W)
 }
@@ -12,5 +12,5 @@ brute_force_knapsack(x, W)
 \item{W}{The second parameter i.e. weight constraint}
 }
 \description{
-Tests Knapsack using four different methods
+Tests Knapsack using Brute Force Search method
 }

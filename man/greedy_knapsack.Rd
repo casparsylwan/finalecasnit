@@ -2,7 +2,7 @@
 % Please edit documentation in R/greedy.R
 \name{greedy_knapsack}
 \alias{greedy_knapsack}
-\title{Tests Knapsack using four different methods}
+\title{Tests Knapsack using Greedy Heuristic method}
 \usage{
 greedy_knapsack(x, W)
 }
@@ -12,5 +12,5 @@ greedy_knapsack(x, W)
 \item{W}{The second parameter i.e. weight constraint}
 }
 \description{
-Tests Knapsack using four different methods
+Tests Knapsack using Greedy Heuristic method
 }

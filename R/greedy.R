@@ -1,5 +1,5 @@
 #GREEDY HEURISTIC OF KNAPSACK
-#' Tests Knapsack using four different methods
+#' Tests Knapsack using Greedy Heuristic method
 #'
 #' @param x The first parameter i.e. a data frame
 #' @param W The second parameter i.e. weight constraint

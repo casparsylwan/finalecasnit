@@ -1,12 +1,12 @@
 
-#' Tests Knapsack using four different methods
+#' Tests Knapsack using Brute Force Search method
 #'
 #' @param x The first parameter i.e. a data frame
 #' @param W The second parameter i.e. weight constraint
 #'
 #' @return
 #' @export
-#'
+#' @importFrom utils combn
 #'
 brute_force_knapsack <- function(x,W){
   if(!is.data.frame(x)==TRUE){
