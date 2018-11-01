@@ -1,3 +1,13 @@
+
+#' Tests Knapsack using dynamic programming
+#'
+#' @param df The first parameter i.e. a data frame
+#' @param W The second parameter i.e. weight constraint
+#'
+#' @return
+#' @export
+#'
+
 knapsack_dynamic<-function(df, W){
 
   df<-df[order(df[,1]),]
