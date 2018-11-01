@@ -1,11 +1,10 @@
-
 #' Tests Knapsack using dynamic programming
 #'
 #' @param df The first parameter i.e. a data frame
 #' @param W The second parameter i.e. weight constraint
 #'
-#' @return
-#' @export
+#' @return list with the best objects.
+#' @export knapsack_dynamic
 #'
 
 knapsack_dynamic<-function(df, W){

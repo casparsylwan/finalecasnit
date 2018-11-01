@@ -11,6 +11,9 @@ knapsack_dynamic(df, W)
 
 \item{W}{The second parameter i.e. weight constraint}
 }
+\value{
+list with the best objects.
+}
 \description{
 Tests Knapsack using dynamic programming
 }

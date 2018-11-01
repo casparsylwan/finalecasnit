@@ -27,6 +27,13 @@ knapsack_objects <-
   )
 brute_force_knapsack(x = knapsack_objects[1:8,], W = 3500)
 ```
+## Dynamic knappsack
+
+```{r}
+knapsack_dynamic(knapsack_objects[1:8,], W = 3500)
+
+
+```
 
 ## Greedy Heuristic
 
