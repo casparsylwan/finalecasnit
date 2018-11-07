@@ -74,7 +74,7 @@ test_that("Function return correct results.", {
 
   st <- system.time(bfk <- brute_force_knapsack(x = knapsack_objects[1:16,], W = 2000))
 
-  expect_true(as.numeric(st)[3] > 0.00)
+  expect_true(as.numeric(st)[2] > 0.00)
 
 })
 
