@@ -12,6 +12,9 @@ greedy_knapsack <- function(x ,W){
   if(!is.data.frame(x)==TRUE){
     stop("The input is not a data frame")
   }
+  if(W<=0){
+    stop("maximum allocated weight is incorrect")
+  }
   weight1 <- as.list(x[1])
   weight2 <- unlist(weight1)
   weight3 <- as.numeric(weight2)
