@@ -7,9 +7,9 @@
 knapsack_dynamic_cpp(df, W)
 }
 \arguments{
-\item{df}{}
+\item{df}{The first parameter i.e. a data frame}
 
-\item{W}{}
+\item{W}{The second parameter i.e. weight constraint}
 }
 \description{
 Dynamic knappsack with rcpp

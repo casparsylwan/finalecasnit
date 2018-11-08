@@ -2,8 +2,8 @@
 #'
 #'@importFrom Rcpp cppFunction
 #'
-#'@param df 
-#'@param W
+#'@param df The first parameter i.e. a data frame
+#'@param W The second parameter i.e. weight constraint
 #'
 #'@export 
 #'
