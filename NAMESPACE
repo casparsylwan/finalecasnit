@@ -3,4 +3,6 @@
 export(brute_force_knapsack)
 export(greedy_knapsack)
 export(knapsack_dynamic)
+export(knapsack_dynamic_cpp)
+importFrom(Rcpp,cppFunction)
 importFrom(utils,combn)

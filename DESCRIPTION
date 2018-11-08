@@ -17,4 +17,5 @@ Suggests:
     testthat
 VignetteBuilder: knitr
 Imports:
-    utils
+    utils,
+    Rcpp
