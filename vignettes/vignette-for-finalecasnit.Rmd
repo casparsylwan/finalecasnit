@@ -14,6 +14,37 @@ The package tests Knapsack using four difference methods.
 
 finalecasnit package tests Knapsack using Brute Force Search, Dynamic Programming, Greedy Heuristic, and Rcpp.
 
+## Dynamic knapsack
+
+Dynamic knapsack have been done in two version, one with loops in r, and one with loops in C++. When testing the two functions one can clearly see that the bottlenecks of is the for loops. To solve the loops are done in Rccp and a test of speed is done here under. At the writing moment there is a problem with package lineprof from Hadley Wickaham and because of this lineprof cannot be used to illustrate this the problem.
+By using sys.time we can compare the two functions to see how much it improved.  
+
+```{r}
+library(finalecasnit)
+set.seed(42) #Given data
+n <- 2000
+knapsack_objects <-
+  data.frame(
+    w=sample(1:4000, size = n, replace = TRUE),
+    v=runif(n = n, 0, 10000)
+  )
+
+dynamic_time<-base::system.time( knapsack_dynamic(knapsack_objects[1:8,],3500) )
+print(dynamic_time)
+
+#dynamic_Rcpp_time<- base::system.time( knapsack_dynamic_cpp(knapsack_objects[1:8,],3500))
+#print(dynamic_Rcpp_time)
+
+brute_time <-base::system.time( brute_force_knapsack(x = knapsack_objects[1:8,], W = 3500))
+print(brute_time)
+
+
+
+
+```
+
+
+
 ## Brute Force Search
 
 ```{r}
